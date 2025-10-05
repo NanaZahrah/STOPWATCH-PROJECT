@@ -67,5 +67,3 @@ display.innerText = `${h}:${m}:${s}:${ms}`;
         Document.body.classList.toggle("light");
     }
 
-    }
-    }
