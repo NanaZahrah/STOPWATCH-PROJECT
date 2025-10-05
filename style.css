@@ -87,6 +87,7 @@ body {
     background: rgba(0,0,0,0.1);
 }
 
+/* Responsiveness */
 @media (max-width: 600px) {
     #display {
         font-size: 2rem;
