@@ -51,18 +51,21 @@ display.innerText = `${h}:${m}:${s}:${ms}`;
         clearInterval(timer);
         [hours, minutes, seconds, milliseconds] = [0,0,0,0];
         display.innerText = "00:00:00:000";
-        lapsContainer.innerHTML = ""; //clear laps too
+        lapsContainer.innerHTML = ""; 
     }
 
     //Lap
     function addLap() {
-        if (hours + minutes + seconds + millliseconds === 0) return; //prevent empty laps
+        if (hours + minutes + seconds + millliseconds === 0) return; //ignore if 0
         let li = document.createElement("li");
         li.innerText = display.innerText;
         lapsContainer.appendChild(li);
     }
 
-    //Dark/Light Mode
+    //Theme Toggle
     function toggleTheme() {
         Document.body.classList.toggle("light");
+    }
+
+    }
     }
