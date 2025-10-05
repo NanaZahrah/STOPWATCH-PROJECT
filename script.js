@@ -1,3 +1,5 @@
+console.log("✅Script connected!");
+
 let [hours,minutes,seconds,milliseconds]=[0,0,0,0];
 let display=document.getElementById("display");
 let timer=null;
@@ -66,4 +68,5 @@ display.innerText = `${h}:${m}:${s}:${ms}`;
     function toggleTheme() {
         Document.body.classList.toggle("light");
     }
+
 
